@@ -10,7 +10,9 @@ import UpgradeButton from "@/components/UpgradeButton";
 import { PLANS } from "@/config/stripe";
 import { cn } from "@/lib/utils";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import { ArrowRight, Check, HelpCircle, Link, Minus } from "lucide-react";
+import { ArrowRight, Check, HelpCircle, Minus } from "lucide-react";
+import Link from "next/link";
+export const dynamic = "force-dynamic";
 
 const Page = async () => {
   const { getUser } = getKindeServerSession();
