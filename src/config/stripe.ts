@@ -19,9 +19,9 @@ export const PLANS = [
     quota: 50,
     pagesPerPdf: 25,
     price: {
-      amount: 3,
+      amount: 10,
       priceIds: {
-        test: "price_1P3IDDSGcsAf6AqxULG2X2w4",
+        test: "price_1P3tA0SGcsAf6AqxZLxjEQ8e",
         production: "",
       },
     },

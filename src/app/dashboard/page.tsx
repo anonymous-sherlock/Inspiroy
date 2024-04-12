@@ -5,11 +5,11 @@ import { redirect } from "next/navigation";
 
 const Page = async () => {
   const { getUser } = getKindeServerSession();
-  const user = await getUser(); // Await the getUser() function call
+  const user = await getUser();
 
   if (!user || !user.id) redirect("/auth-callback?origin=dashboard");
 
-  const dbUser = await db.user.findFirst({
+  const dbUser = db.user.findFirst({
     where: {
       id: user.id,
     },
@@ -18,5 +18,4 @@ const Page = async () => {
 
   return <Dashboard />;
 };
-
 export default Page;
