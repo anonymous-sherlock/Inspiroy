@@ -41,14 +41,14 @@ const Navbar = async () => {
                     size: "sm",
                   })}
                 >
-                  Sign Up
+                  Sign in
                 </LoginLink>
                 <RegisterLink
                   className={buttonVariants({
                     size: "sm",
                   })}
                 >
-                  Get Started <ArrowRight className="ml-1.5 h-5 w-5" />
+                  Get started <ArrowRight className="ml-1.5 h-5 w-5" />
                 </RegisterLink>
               </>
             ) : (
@@ -62,6 +62,7 @@ const Navbar = async () => {
                 >
                   Dashboard
                 </Link>
+
                 <UserAccountNav
                   name={
                     !user.given_name || !user.family_name

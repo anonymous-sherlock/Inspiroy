@@ -8,14 +8,11 @@ import Providers from "@/components/Providers";
 import "react-loading-skeleton/dist/skeleton.css";
 import "simplebar-react/dist/simplebar.min.css";
 import { Toaster } from "@/components/ui/toaster";
-import { cn } from "@/lib/utils";
+import { cn, constructMetadata } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Inspiron - the SaaS for students",
-  description: "Inspiron is a SaaS for students to manage their academic life",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
